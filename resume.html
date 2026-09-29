@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Hussain Pasha — Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      font-size: 13px;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 40px 50px;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      text-align: center;
+      margin-bottom: 18px;
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 14px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .header .title {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #444;
+      margin-top: 4px;
+      text-transform: uppercase;
+    }
+
+    .header .contact {
+      font-size: 12px;
+      color: #333;
+      margin-top: 6px;
+    }
+
+    .header .contact a {
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    .header .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #1a1a1a;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    /* ── SUMMARY ── */
+    .summary p {
+      font-size: 13px;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 4px 10px;
+    }
+
+    .skills-grid .label {
+      font-weight: 700;
+      font-size: 12px;
+      color: #1a1a1a;
+      padding-top: 1px;
+    }
+
+    .skills-grid .value {
+      font-size: 12px;
+      color: #333;
+    }
+
+    /* ── EXPERIENCE ── */
+    .job {
+      margin-bottom: 14px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .job-header .company {
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .job-header .dates {
+      font-size: 12px;
+      color: #555;
+      white-space: nowrap;
+    }
+
+    .job-subheader {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 1px;
+    }
+
+    .job-subheader .role {
+      font-weight: 600;
+      font-size: 12px;
+      color: #333;
+      font-style: italic;
+    }
+
+    .job-subheader .location {
+      font-size: 12px;
+      color: #555;
+    }
+
+    .project-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-top: 5px;
+    }
+
+    .tech-stack {
+      font-size: 11px;
+      color: #555;
+      font-style: italic;
+      margin-top: 2px;
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 16px;
+      margin-top: 5px;
+    }
+
+    ul li {
+      font-size: 12px;
+      color: #222;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+
+    /* ── PROJECT ── */
+    .project {
+      margin-bottom: 12px;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .project-header .proj-title {
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .project-header .proj-link {
+      font-size: 12px;
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    .project-header .proj-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ── EDUCATION ── */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .edu-item .degree {
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .edu-item .year {
+      font-size: 12px;
+      color: #555;
+      white-space: nowrap;
+    }
+
+    .edu-item .institution {
+      font-size: 12px;
+      color: #444;
+    }
+
+    .edu-block {
+      margin-bottom: 8px;
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      body {
+        padding: 20px 30px;
+      }
+      a {
+        color: #1a1a1a !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Syed Hussain Pasha</h1>
+    <div class="title">Java Fullstack Engineer &nbsp;|&nbsp; React.js &nbsp;|&nbsp; Spring Boot &nbsp;|&nbsp; TypeScript</div>
+    <div class="contact">
+      Bengaluru, India &nbsp;|&nbsp;
+      +91 8147510208 &nbsp;|&nbsp;
+      <a href="mailto:syed97syed97@gmail.com">syed97syed97@gmail.com</a> &nbsp;|&nbsp;
+      <a href="#">LinkedIn</a> &nbsp;|&nbsp;
+      <a href="#">GitHub</a> &nbsp;|&nbsp;
+      <a href="#">Portfolio</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section summary">
+    <div class="section-title">Professional Summary</div>
+    <p>
+      Java Fullstack Engineer with 5+ years of experience building end-to-end scalable applications using React.js,
+      TypeScript, Spring Boot, and PostgreSQL across SaaS, Telecom, E-Commerce, and Private 5G/LTE domains.
+      Experienced in REST API design, JWT authentication, Spring Security, JPA, and frontend architecture. Skilled
+      in delivering full-stack features across the entire development lifecycle — from database design to responsive UI
+      — in Agile environments.
+    </p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <span class="label">Backend</span>
+      <span class="value">Java 17, Spring Boot, Spring Security, Spring Data JPA, Hibernate, JWT Authentication, REST API Design, PostgreSQL, Maven, JUnit 5, Mockito</span>
+
+      <span class="label">Frontend</span>
+      <span class="value">React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS, Tailwind CSS, React Hooks, Redux, Redux Toolkit, Redux-Saga, Context API, Axios</span>
+
+      <span class="label">Testing</span>
+      <span class="value">JUnit 5, Mockito, Jest, React Testing Library, SonarQube, Integration Testing</span>
+
+      <span class="label">DevOps &amp; Tools</span>
+      <span class="value">Git, GitHub Actions, GitLab, Jenkins, Azure DevOps, AWS, CI/CD, Docker, JIRA, Webpack, Babel</span>
+
+      <span class="label">Domains</span>
+      <span class="value">Private 5G/LTE, Telecom Network Management, E-Commerce, SaaS Platforms, Progressive Web Applications (PWA)</span>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="proj-title">Task Manager — Java Fullstack Application</span>
+        <a href="#" class="proj-link">GitHub →</a>
+      </div>
+      <div class="tech-stack">Spring Boot 4 · Spring Security · JWT · JPA · PostgreSQL · Next.js · React.js · TypeScript · JUnit 5 · Mockito</div>
+      <ul>
+        <li>Built a production-grade JWT-authenticated Task Manager REST API using Spring Boot 4, Spring Security, and Spring Data JPA with PostgreSQL, implementing full CRUD operations with role-based access control.</li>
+        <li>Designed User and Task JPA entities with Hibernate ORM, auto-generated schema management, and relationship mapping (<code>@ManyToOne</code>, <code>@PrePersist</code>, enum constraints).</li>
+        <li>Secured the API with stateless JWT authentication — implemented <code>JwtUtil</code>, <code>JwtAuthFilter</code>, <code>CustomUserDetailsService</code>, and <code>SecurityFilterChain</code> with BCrypt password encoding.</li>
+        <li>Built a Next.js 16 frontend with App Router, protected routes via middleware, Axios interceptors for JWT injection, and React Context API for global auth state.</li>
+        <li>Achieved full test coverage with JUnit 5 + Mockito unit tests and <code>@WebMvcTest</code> integration tests (13 tests, 0 failures).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <!-- TIETO -->
+    <div class="job">
+      <div class="job-header">
+        <span class="company">TIETO</span>
+        <span class="dates">Oct 2025 – Present</span>
+      </div>
+      <div class="job-subheader">
+        <span class="role">Senior Software Engineer</span>
+        <span class="location">Bengaluru, India</span>
+      </div>
+      <div class="project-name">NetCloud Manager (NCM) — Enterprise Private 5G/LTE Network Management Platform</div>
+      <div class="tech-stack">React.js · TypeScript · REST APIs · Jest · React Testing Library · Agile/Scrum</div>
+      <ul>
+        <li>Own frontend architecture and develop scalable React.js and TypeScript applications for enterprise Private 5G/LTE network management, supporting provisioning, monitoring, subscriber management, and telecom operations across multiple backend microservices.</li>
+        <li>Lead end-to-end frontend delivery of 5+ Radio Access Network (RAN) features — including cell provisioning, radio configuration, redundancy management, and network validation — consistently delivering within planned sprint cycles.</li>
+        <li>Architect and maintain shared React.js component libraries and REST API communication layers using custom fetch handlers and JSON:API-compliant patterns across a 32-package enterprise monorepo.</li>
+        <li>Drive frontend quality through Jest and React Testing Library unit, integration, and regression testing; maintain SonarQube quality gates and secure coding standards across release cycles.</li>
+        <li>Mentor 2–3 junior engineers on React.js architecture, reusable component patterns, testing, and best practices.</li>
+        <li>Implement WCAG-compliant accessibility, i18n across 3 languages (English, Spanish, German), and responsive design; collaborate with architects, product owners, backend engineers, and QA in Agile/Scrum cycles.</li>
+      </ul>
+    </div>
+
+    <!-- TECH MAHINDRA -->
+    <div class="job">
+      <div class="job-header">
+        <span class="company">TECH MAHINDRA</span>
+        <span class="dates">Jun 2022 – Oct 2025</span>
+      </div>
+      <div class="job-subheader">
+        <span class="role">Software Engineer</span>
+        <span class="location">Bengaluru, India</span>
+      </div>
+
+      <div class="project-name">Foresight — Enterprise SaaS Platform</div>
+      <div class="tech-stack">React.js · TypeScript · Redux Toolkit · Redux-Saga · REST APIs · Jest · i18n · Webpack</div>
+      <ul>
+        <li>Built and owned a reusable React.js and TypeScript component library adopted across 4+ enterprise modules, standardizing UI patterns and improving development consistency.</li>
+        <li>Improved Lighthouse Performance score from 65 to 89 through code splitting, lazy loading, and Webpack bundle optimization; translated Figma designs into production-ready, accessible React.js components.</li>
+        <li>Implemented enterprise-scale i18n for multilingual deployments; managed complex state using Redux Toolkit and Redux-Saga; increased unit test coverage from 62% to 92% with Jest and React Testing Library.</li>
+        <li>Enforced SonarQube quality gates and secure coding practices to reduce production defects across release cycles.</li>
+      </ul>
+
+      <div class="project-name" style="margin-top:8px;">E-Shop — E-Commerce Platform</div>
+      <div class="tech-stack">React.js · TypeScript · Redux · REST APIs · Error Handling</div>
+      <ul>
+        <li>Developed reusable React.js and TypeScript components for product listing, shopping cart, and checkout workflows supporting high-traffic e-commerce operations.</li>
+        <li>Implemented Redux, Redux Toolkit, and Redux-Saga state management across complex multi-step customer journeys; integrated REST APIs with robust error handling to improve application stability.</li>
+        <li>Diagnosed and resolved production incidents through root-cause analysis and targeted hotfixes, minimizing downtime.</li>
+      </ul>
+    </div>
+
+    <!-- G.A. MORGAN -->
+    <div class="job">
+      <div class="job-header">
+        <span class="company">G. A. MORGAN DYNAMICS PVT. LTD.</span>
+        <span class="dates">Dec 2020 – Jun 2022</span>
+      </div>
+      <div class="job-subheader">
+        <span class="role">Software Developer</span>
+        <span class="location">Bengaluru, India</span>
+      </div>
+      <div class="project-name">Morgan2Design — Digital Apparel Design Progressive Web Application</div>
+      <div class="tech-stack">React.js · ReactKonva · Redux · Redux Thunk · CouchDB · PWA</div>
+      <ul>
+        <li>Designed and developed an offline-capable PWA using React.js and ReactKonva for interactive digital apparel design and canvas-based pattern creation.</li>
+        <li>Implemented offline-first storage and real-time synchronization using Redux, Redux Thunk, and CouchDB, supporting distributed data management across environments.</li>
+        <li>Improved application performance by 25% through frontend optimization, client-side caching, and code refactoring; modularized legacy code to reduce technical debt.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="edu-block">
+      <div class="edu-item">
+        <span class="degree">Bachelor of Engineering — Computer Science &amp; Engineering</span>
+        <span class="year">2016 – 2019</span>
+      </div>
+      <div class="institution">Channabasaveshwara Institute of Technology (CIT), Gubbi</div>
+    </div>
+
+    <div class="edu-block">
+      <div class="edu-item">
+        <span class="degree">Diploma in Computer Science &amp; Engineering</span>
+        <span class="year">2013 – 2016</span>
+      </div>
+      <div class="institution">Government Polytechnic Tumkur</div>
+    </div>
+  </div>
+
+</body>
+</html>
